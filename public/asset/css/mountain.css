@@ -1,0 +1,156 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin:0 auto;
+    /* padding: 0px; */
+    background: url(../../images/backgroundlast.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+.zhuti{
+    background: url(../../images/bookall.png) ;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    width: 1450px;
+    height: 800px;
+    z-index: 100;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* margin:0 auto; */
+    top:0px; 
+    right:0px; 
+    bottom:0px; 
+    left:0px;
+     margin:auto;
+     -moz-transform:scale(0.9);
+     zoom:90%; 
+     -moz-transform-origin:10% center;
+     color:#996f56;
+}
+
+.mountain{
+    position: relative;
+    width: 30%;
+    height: 83%;
+    /* background-color:palegoldenrod; */
+    margin-top: 3%;
+    margin-left: 16%;
+    display: flex;
+    flex-direction:column;
+}
+.mountain img{
+    width: 95%;
+    height: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.mountain span{
+    margin-top: 2%;
+    width: 95%;
+    /* margin-left: 1%; */
+    line-height: 2em;
+    padding-left:2em;
+}
+
+.river{
+    position: relative;
+    width:30%;
+    height: 53%;
+    /* background-color: antiquewhite; */
+    margin-top: -40%;
+    margin-left: 55%;
+}
+.river span{
+    width: 95%;
+    /* margin-left: 1%; */
+    line-height: 2.5em;
+    padding-left:2em;
+    margin-top: 20%;
+}
+
+.river img{
+    width: 95%;
+    height: 70%;
+    margin-top: 5%;
+    
+}
+
+
+
+/* 标签按钮*/
+.self-button{
+    display: flex;
+    flex-direction: row;
+    justify-content:normal;
+    width: 100%;
+    height: 12%;
+    margin-top: 4%;
+}
+
+/*修改92-154*/
+.b{
+    width: 3%;
+    height: 100%;
+    /*background-color: palegoldenrod;*/
+}
+.self-button1{
+    margin-top: -37%;
+    margin-left: 5.2%;
+}
+.self-button2{
+    margin-top: -28.3%;
+    margin-left: -3%
+}
+.self-button3{
+    margin-top: -18%;
+    margin-left: -3%
+}
+.self-button4{
+    margin-top: -8.2%;
+    margin-left: -3%
+}
+.self-button5{
+    margin-top: 2.6%;
+    margin-left: -3%;
+    -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+}
+.self-button6{
+    margin-left: 87.1%;
+    margin-top: -36%;
+    /* -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255); */
+}
+.self-button7{
+    margin-left: -2.8%;
+    margin-top: -22.8%;
+}
+.self-button8{
+    margin-left: -3%;
+    margin-top: -11.5%;
+}
+.self-button9{
+    margin-left: -3.3%;
+    margin-top: 0.2%;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 100;
+}
+a:hover{
+    /* background-color:gray; */
+    opacity: .5;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+

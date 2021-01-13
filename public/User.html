@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<title>SeeCU</title>
+<link rel="Shortcut Icon" href="./favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="stylesheets/User.css">
+<!-- <link rel="stylesheet" href="dist/sortable.min.css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./stylesheets/nav_bar_style.css">
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://www.fontorg.com/js/fontorg/fontorg.min.js"></script>
+<link crossorigin="anonymous" integrity="sha384-fbgZzqs18kzkWpmsI2DIHL8nEsY/ks8QJaP0ANIt+omqreCBPJqJa8aeas9xwqj3" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+<script crossorigin="anonymous" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu//q5B/lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- <script type="text/javascript" src="dist/sortable.min.js"></script> -->
+<!-- <link href="../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" /> -->
+<link rel="stylesheet" href="../asset/css/paper.css">
+<!-- <link rel="stylesheet" href="../asset/css/paper.min.css"> -->
+</head>
+<body id="body">
+
+  <!-----------------------------------顶栏--------------------------------->
+
+  <div id="innerHeader">
+    <p>
+      <font size="7" id="Board_Header">私人空间</font>
+    </p>
+    <img id="head_img" style="display:none; width:4rem; height:4rem; z-index:999; position:fixed; right:1em; top:1rem;" src="">
+      <div id="flex_inner">
+        <button class="main-nav__toggler toggler-open" type="button" title="Open Menu" style="background-color: #474343; position:fixed; left:1rem; ">
+          <div class="toggler-open__bar"></div>
+          <div class="toggler-open__bar"></div>
+          <div class="toggler-open__bar"></div>
+        </button>
+        <div class="main-nav__expandable">
+          <div class="main-nav__expandable-inner">
+            <div class="nav_container">
+              <div class="main-nav__expandable-content">
+                <!--nav close btn-->
+                <button class="main-nav__toggler toggler-close" type="button" title="Close Menu"></button>
+                <!--nav links list-->
+                <ul class="main-nav__list" >
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Home" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/index.html'"><span class="main-nav__link-title">Home</span></p></li>
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Login" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/Login.html'"><span class="main-nav__link-title">Login</span></p></li>
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="SignUp" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/SignUp.html'"><span class="main-nav__link-title">SignUp</span></p></li>
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Write Article" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/WriteArticle.html'"><span class="main-nav__link-title">Write Article</span></p></li>
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="MessageBox" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/MessageBox.html'"><span class="main-nav__link-title">MessageBox</span></p></li>
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="User" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/User.html'"><span class="main-nav__link-title">User</span></p></li>
+                  <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="About As" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/about.html'"><span class="main-nav__link-title">About Us</span></p></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      <label class="paper-btn margin fontorg-2015" for="modal-1" id="Info_Board" style="font-size:x-large; width: 7rem; height:3rem; text-align:center;">关于空间</label>
+
+      
+    <fieldset class="form-group" style="height: 3rem;" id="button_lights">
+      <!-- <p>Type3 - Tile style</p> -->
+      <label for="paperSwitch1" class="paper-switch-tile">
+        <input id="paperSwitch1" name="paperSwitch1" type="checkbox" />
+        <div class="paper-switch-tile-card border">
+          <div class="paper-switch-tile-card-front border" id="button_header_light">HDark</div>
+          <div class="paper-switch-tile-card-back border background-primary" id="button_header_dark" >HLight</div>
+        </div>
+      </label>
+      <label for="paperSwitch2" class="paper-switch-tile">
+        <input id="paperSwitch2" name="paperSwitch2" type="checkbox" />
+        <div class="paper-switch-tile-card border">
+          <div class="paper-switch-tile-card-front border background-warning" id="button_body_dark">BLight</div>
+          <div class="paper-switch-tile-card-back border background-secondary" id="button_body_light">BDark</div>
+        </div>
+      </label>
+      <label for="paperSwitch3" class="paper-switch-tile">
+        <input id="paperSwitch3" name="paperSwitch3" type="checkbox" />
+        <div class="paper-switch-tile-card border">
+          <div class="paper-switch-tile-card-front border background-danger" id="button_all_dark">AllLight</div>
+          <div class="paper-switch-tile-card-back border background-success" id="button_all_light">AllDark</div>
+        </div>
+      </label>
+    </fieldset>
+    
+    <!-- <button class="papercss" id="Write_Board" style=" width: 7rem; height:4rem; font-size:x-large;">我要上黑板！</button> -->
+  </div>
+</div>
+  <div id="Info_Board_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-1" type="checkbox">
+    <div class="modal" >
+      <label class="modal-bg" for="modal-1"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-1">X</label>
+        <h4 class="modal-title">空间说明</h4>
+        <h5 class="modal-subtitle">个人天地,分享心情</h5>
+        <p class="modal-text"> <br> 这是你的私人空间,存放心情的好地方. <br> 好好收纳，好好整理.:D</p>
+        <label for="modal-1" style="border:2px solid rgb(112, 104, 104); cursor:pointer">OK!</label>
+        <!-- <button class="papercss" for="modal-1"></button> -->
+      </div>
+    </div>
+  </div>
+
+
+  
+  <label class="paper-btn margin" for="modal-2" id="Login_Already_Board" style="display:none;">登录失败</label>
+  <div id="Login_Already_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-2" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-2"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-2">X</label>
+        <h4 class="modal-title">登录提醒</h4>
+        <h5 class="modal-subtitle">重复登陆，耗子尾汁</h5>
+        <p class="modal-text"> <br> 是跳转出了问题吗???<br>总之,你已经登陆过了!:D</p>
+        <label for="modal-2" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Alright!</label>
+        <!-- <button class="papercss" for="modal-1"></button> -->
+      </div>
+    </div>
+  </div>
+
+  <label class="paper-btn margin" for="modal-3" id="Login_Fail_Board" style="display:none;">登录失败</label>
+  <div id="Login_Fail_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-3" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-3"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-3">X</label>
+        <h4 class="modal-title">登录提醒</h4>
+        <h5 class="modal-subtitle">耐心仔细，小心填写</h5>
+        <p class="modal-text"> <br> 你的账号密码写错了,与我们程序猿无瓜!:D</p>
+        <label for="modal-3" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Alright!</label>
+        <!-- <button class="papercss" for="modal-1"></button> -->
+      </div>
+    </div>
+  </div>
+  <label class="paper-btn margin" for="modal-4" id="Logout_If_Board" style="display:none;">退出登录</label>
+  <div id="Logout_If_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-4" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-4"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-4">X</label>
+        <h4 class="modal-title">登出提醒</h4>
+        <h5 class="modal-subtitle">分享快乐，感谢体验</h5>
+        <p class="modal-text"> <br> 你要退出吗,欢迎下次登录.:D</p>
+        <label for="modal-4" style="border:2px solid rgb(112, 104, 104); cursor:pointer" id="button_logout">OK!</label>
+      </div>
+    </div>
+  </div>
+  <label class="paper-btn margin" for="modal-5" id="Logout_Yes_Board" style="display:none;">退出成功</label>
+  <div id="Logout_Yes_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-5" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-5"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-5">X</label>
+        <h4 class="modal-title">登出提醒</h4>
+        <h5 class="modal-subtitle">分享快乐，感谢体验</h5>
+        <p class="modal-text"> <br> 欢迎下次登录.:D</p>
+        <label for="modal-5" style="border:2px solid rgb(112, 104, 104); cursor:pointer">OK!</label>
+      </div>
+    </div>
+  </div>
+  <label class="paper-btn margin" for="modal-6" id="Dele_If_Board" style="display:none;">删除文章</label>
+  <div id="Dele_If_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-6" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-6"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-6">X</label>
+        <h4 class="modal-title">删除提醒</h4>
+        <h5 class="modal-subtitle">数据删除,谨慎点击</h5>
+        <p class="modal-text"> <br>你确定要删除这条文章吗?.:D</p>
+        <label for="modal-6" style="border:2px solid rgb(112, 104, 104); cursor:pointer" id="button_if_dele">Yes!</label>
+      </div>
+    </div>
+  </div>
+  <label class="paper-btn margin" for="modal-7" id="Dele_No_Board" style="display:none;">删除失败</label>
+  <div id="Dele_No_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-7" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-7"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-7">X</label>
+        <h4 class="modal-title">删除提醒</h4>
+        <h5 class="modal-subtitle">操作失败,哎哦...</h5>
+        <p class="modal-text"> <br> 等会再试试吧.:D</p>
+        <label for="modal-7" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Oh!</label>
+      </div>
+    </div>
+  </div>
+  <label class="paper-btn margin" for="modal-8" id="Dele_Yes_Board" style="display:none;">删除成功</label>
+  <div id="Dele_Yes_Box" class="fontorg-2015">
+    <input class="modal-state" id="modal-8" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-8"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-8">X</label>
+        <h4 class="modal-title">删除提示</h4>
+        <h5 class="modal-subtitle">分享快乐，感谢体验</h5>
+        <p class="modal-text"> <br> 删除成功了,我要刷新咯.:D</p>
+        <label for="modal-8" style="border:2px solid rgb(112, 104, 104); cursor:pointer">OK!</label>
+      </div>
+    </div>
+  </div>
+  <label class="paper-btn margin" for="modal-9" id="Login_No_Board" style="display:none;">请先登录</label>
+<div id="Login_No_Box" style="display:none;" class="fontorg-2015">
+  <input class="modal-state" id="modal-9" type="checkbox">
+  <div class="modal">
+    <label class="modal-bg" for="modal-9"></label>
+    <div class="modal-body">
+      <label class="btn-close" for="modal-9">X</label>
+      <h4 class="modal-title">查看提醒</h4>
+      <h5 class="modal-subtitle">还未登录</h5>
+      <p class="modal-text"> <br> 你还没登录呢,先登录再看呗.:D</p>
+      <label for="modal-9" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Fine!</label>
+      <!-- <button class="papercss" for="modal-1"></button> -->
+    </div>
+  </div>
+</div>
+<!--------------------------------艺术字体设置------------------------------------>
+<script>    
+  /* 参数 aDomElement 是包含您目标文字的 DOM元素，如document.getElementById('xxx')；一次只处理一个元素，如要对多个元素进行操作，可多次调用该函数 */
+  // $webFontApi.setFontSync("4bee14ddc268607607def1f1","fontorg-2014",aDomElement); //蝉羽青城坨坨体
+  var Font_Board_Header =  document.getElementById("Board_Header");
+  $webFontApi.setFontSync("4bee14ddc268607607def1f1","fontorg-2014",Font_Board_Header); //蝉羽青城坨坨体
+  var Font_2015 = $(".fontorg-2015");
+  Font_2015.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015"); //蝉羽飞鸟依人
+</script>
+
+  <div id="Self_Info">
+    <h1>SeeCU DayDayUp</h1>
+    <div style="margin:auto;">
+    <img id="head_img_big" style="display:none; width:8rem; height:8rem; z-index:999;margin:auto;" src="">
+  </div>
+    <table class="papercss papercss_en table-hover table-alternating" style="margin-bottom: 5rem;margin-top: 1rem;">
+        <thead>
+          <tr>
+            <!-- <th>SeeCU ID</th>
+            <th>Some ID Numbers Here...</th> -->
+            <!-- <th>Position</th>
+            <th>Location</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SeeCU ID</th>
+            <td id="userid">Some ID Numbers Here...</th>
+            <!-- <th>Position</th>
+            <th>Location</th> -->
+          </tr>
+          <tr>
+            <td>UserName</td>
+            <td id="user_name">Your UserName...</td>
+            <!-- <td>Musician</td>
+            <td>California, USA</td> -->
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td id="user_gender">Your Gender...</td>
+            <!-- <td>Musician</td>
+            <td>Ohio, USA</td> -->
+          </tr>
+          <tr>
+            <td>Birthday</td>
+            <td id="user_birth">Your Birthday...</td>
+            <!-- <td>Psychologist</td>
+            <td>California, USA</td> -->
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td id="user_email">Your Email...</td>
+            <!-- <td>Psychologist</td>
+            <td>California, USA</td> -->
+          </tr>
+          <tr>
+            <td>SignUp Time</td>
+            <td id="user_signup_time">Your SignUp Time...</td>
+            <!-- <td>Psychologist</td>
+            <td>California, USA</td> -->
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Add table-hover or table-alternating to change the style of the table -->
+      <table class="table-hover">
+      <table class="table-alternating">
+  </div>
+  <!-------------------------个人发布文章框架-------------------------------->
+  <div id="container" class="container" style="margin-bottom: 3rem;">
+
+  </div>
+
+<script>
+  /* jQueryObject 是包含您目标文字的 jQuery对象，如$('.myClass')，可一次性对多个元素设置同一字体 */
+  $(function(){
+      //jQueryObject.setFontSync("4bee14ddc268607607def1f1","fontorg-2014"); //蝉羽青城坨坨体
+  });
+</script>
+
+<script src="./javascripts/User.js"></script>
+<script src="./javascripts/nav_bar_script.js"></script>
+</body>
+</html>

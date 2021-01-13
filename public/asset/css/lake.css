@@ -1,0 +1,148 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin:0 auto;
+    /* padding: 0px; */
+    background: url(../../images/backgroundlast.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+.zhuti{
+    background: url(../../images/bookall.png) ;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    width: 1450px;
+    height: 800px;
+    z-index: 100;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* margin:0 auto; */
+    top:0px; 
+    right:0px; 
+    bottom:0px; 
+    left:0px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    -moz-transform:scale(0.9);
+    zoom:90%; 
+    -moz-transform-origin:10% center;
+}
+
+.jianjie{
+    position: relative;
+    width: 30%;
+    height: 83%;
+    /* background-color:palegoldenrod; */
+    margin-top: 5%;
+    margin-left: 17%;
+    font-size: 1rem;
+    line-height:2rem;
+    color:#996f56;
+}
+span{
+    padding-left:2em;
+}
+
+.jieshao{
+    position: relative;
+    width:30%;
+    height: 83%;
+    /* background-color: antiquewhite; */
+    margin-top: -46%;
+    margin-left: 55%;
+    font-size: 1rem;
+    line-height:2rem;
+    color:#996f56;
+}
+.jieshao img{
+    width: 95%;
+    height: 55%;
+
+}
+.test{
+    width: 95%;
+    margin-top: 2%;
+}
+.jieshao span{
+    line-height: 2em;
+    padding-left:2.5em;
+    /* width: 95%; */
+}
+.self-button{
+    display: flex;
+    flex-direction: row;
+    justify-content:normal;
+    width: 100%;
+    height: 12%;
+    margin-top: -9%
+}
+
+/*修改85-147*/
+
+.b{
+    width: 3%;
+    height: 100%;
+    /*background-color: palegoldenrod;*/
+}
+.self-button1{
+    margin-top: -37%;
+    margin-left: 5.2%;
+}
+.self-button2{
+    margin-top: -28.3%;
+    margin-left: -3%
+}
+.self-button3{
+    margin-top: -18%;
+    margin-left: -3%
+}
+.self-button4{
+    margin-top: -8.2%;
+    margin-left: -3%
+}
+.self-button5{
+    margin-top: 2.6%;
+    margin-left: -3%;
+    -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+}
+.self-button6{
+    margin-left: 87.1%;
+    margin-top: -36%;
+    /* -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255); */
+}
+.self-button7{
+    margin-left: -2.8%;
+    margin-top: -22.8%;
+}
+.self-button8{
+    margin-left: -3%;
+    margin-top: -11.5%;
+}
+.self-button9{
+    margin-left: -3.3%;
+    margin-top: 0.2%;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 100;
+}
+a:hover{
+    /* background-color:gray; */
+    opacity: .5;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+

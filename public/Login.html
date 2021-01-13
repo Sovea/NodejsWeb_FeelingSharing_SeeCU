@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<title>SeeCU</title>
+<link rel="Shortcut Icon" href="./favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="stylesheets/Login.css">
+<!-- <link rel="stylesheet" href="dist/sortable.min.css"> -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./stylesheets/nav_bar_style.css">
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://www.fontorg.com/js/fontorg/fontorg.min.js"></script>
+<link crossorigin="anonymous" integrity="sha384-fbgZzqs18kzkWpmsI2DIHL8nEsY/ks8QJaP0ANIt+omqreCBPJqJa8aeas9xwqj3" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+<script crossorigin="anonymous" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu//q5B/lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- <script type="text/javascript" src="dist/sortable.min.js"></script> -->
+<!-- <link href="../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" /> -->
+<link rel="stylesheet" href="../asset/css/paper.css">
+<!-- <link rel="stylesheet" href="../asset/css/paper.min.css"> -->
+</head>
+<body id="body">
+
+  <!-----------------------------------顶栏--------------------------------->
+  <div id="innerHeader">
+    <p>
+      <font size="7" id="Board_Header">登录</font>
+    </p>
+
+  <div id="flex_inner">
+    <button class="main-nav__toggler toggler-open" type="button" title="Open Menu" style="background-color: #474343; position:fixed; left:1rem; ">
+      <div class="toggler-open__bar"></div>
+      <div class="toggler-open__bar"></div>
+      <div class="toggler-open__bar"></div>
+    </button>
+    <div class="main-nav__expandable">
+      <div class="main-nav__expandable-inner">
+        <div class="nav_container">
+          <div class="main-nav__expandable-content">
+            <!--nav close btn-->
+            <button class="main-nav__toggler toggler-close" type="button" title="Close Menu"></button>
+            <!--nav links list-->
+            <ul class="main-nav__list" >
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Home" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/index.html'"><span class="main-nav__link-title">Home</span></p></li>
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Login" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/Login.html'"><span class="main-nav__link-title">Login</span></p></li>
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="SignUp" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/SignUp.html'"><span class="main-nav__link-title">SignUp</span></p></li>
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Write Article" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/WriteArticle.html'"><span class="main-nav__link-title">Write Article</span></p></li>
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="MessageBox" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/MessageBox.html'"><span class="main-nav__link-title">MessageBox</span></p></li>
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="User" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/User.html'"><span class="main-nav__link-title">User</span></p></li>
+              <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="About As" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/about.html'"><span class="main-nav__link-title">About Us</span></p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <label class="paper-btn margin" for="modal-1" id="Info_Board" style="font-size:x-large; width: 7rem; height:3rem; text-align:center;">关于登录</label>
+    <fieldset class="form-group" style="height: 3rem;" id="button_lights">
+      <!-- <p>Type3 - Tile style</p> -->
+      <label for="paperSwitch1" class="paper-switch-tile">
+        <input id="paperSwitch1" name="paperSwitch1" type="checkbox" />
+        <div class="paper-switch-tile-card border">
+          <div class="paper-switch-tile-card-front border" id="button_header_light">HDark</div>
+          <div class="paper-switch-tile-card-back border background-primary" id="button_header_dark" >HLight</div>
+        </div>
+      </label>
+      <label for="paperSwitch2" class="paper-switch-tile">
+        <input id="paperSwitch2" name="paperSwitch2" type="checkbox" />
+        <div class="paper-switch-tile-card border">
+          <div class="paper-switch-tile-card-front border background-warning" id="button_body_dark">BLight</div>
+          <div class="paper-switch-tile-card-back border background-secondary" id="button_body_light">BDark</div>
+        </div>
+      </label>
+      <label for="paperSwitch3" class="paper-switch-tile">
+        <input id="paperSwitch3" name="paperSwitch3" type="checkbox" />
+        <div class="paper-switch-tile-card border">
+          <div class="paper-switch-tile-card-front border background-danger" id="button_all_dark">AllLight</div>
+          <div class="paper-switch-tile-card-back border background-success" id="button_all_light">AllDark</div>
+        </div>
+      </label>
+    </fieldset>
+    <!-- <button class="papercss" id="Write_Board" style=" width: 7rem; height:4rem; font-size:x-large;">我要上黑板！</button> -->
+  </div>
+</div>
+  <div id="Info_Board_Box">
+    <input class="modal-state" id="modal-1" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-1"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-1">X</label>
+        <h4 class="modal-title">登录规则</h4>
+        <h5 class="modal-subtitle">细心细心再细心！</h5>
+        <p class="modal-text"> <br> 正确填写自己的ID和密码哦.<br>什么!你忘了自己的ID!? <br> 哼哼，告诉过你要记住的，好好想想吧你.:D</p>
+        <label for="modal-1" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Oh!</label>
+        <!-- <button class="papercss" for="modal-1"></button> -->
+      </div>
+    </div>
+  </div>
+
+  
+  <label class="paper-btn margin" for="modal-2" id="Login_Already_Board" style="display:none;">登录失败</label>
+  <div id="Login_Already_Box">
+    <input class="modal-state" id="modal-2" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-2"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-2">X</label>
+        <h4 class="modal-title">登录提醒</h4>
+        <h5 class="modal-subtitle">重复登陆，耗子尾汁</h5>
+        <p class="modal-text"> <br> 是跳转出了问题吗???<br>总之,你已经登陆过了!:D</p>
+        <label for="modal-2" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Alright!</label>
+        <!-- <button class="papercss" for="modal-1"></button> -->
+      </div>
+    </div>
+  </div>
+
+  <label class="paper-btn margin" for="modal-3" id="Login_Fail_Board" style="display:none;">登录失败</label>
+  <div id="Login_Fail_Box">
+    <input class="modal-state" id="modal-3" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-3"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-3">X</label>
+        <h4 class="modal-title">登录提醒</h4>
+        <h5 class="modal-subtitle">耐心仔细，小心填写</h5>
+        <p class="modal-text"> <br> 你的账号密码写错了,与我们程序猿无瓜!:D</p>
+        <label for="modal-3" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Alright!</label>
+        <!-- <button class="papercss" for="modal-1"></button> -->
+      </div>
+    </div>
+  </div>
+
+  <label class="paper-btn margin" for="modal-4" id="Login_Yes_Board" style="display:none;">登录成功</label>
+  <div id="Login_Yes_Box">
+    <input class="modal-state" id="modal-4" type="checkbox">
+    <div class="modal">
+      <label class="modal-bg" for="modal-4"></label>
+      <div class="modal-body">
+        <label class="btn-close" for="modal-4">X</label>
+        <h4 class="modal-title">登录提醒</h4>
+        <h5 class="modal-subtitle">分享快乐，感谢体验</h5>
+        <p class="modal-text"> <br> 登陆成功,去里面逛逛呗.:D</p>
+        <label for="modal-4" style="border:2px solid rgb(112, 104, 104); cursor:pointer">OK!</label>
+      </div>
+    </div>
+  </div>
+<!--------------------------------艺术字体设置------------------------------------>
+<script>    
+  /* 参数 aDomElement 是包含您目标文字的 DOM元素，如document.getElementById('xxx')；一次只处理一个元素，如要对多个元素进行操作，可多次调用该函数 */
+  // $webFontApi.setFontSync("4bee14ddc268607607def1f1","fontorg-2014",aDomElement); //蝉羽青城坨坨体
+  var Font_Board_Header =  document.getElementById("Board_Header");
+  $webFontApi.setFontSync("4bee14ddc268607607def1f1","fontorg-2014",Font_Board_Header); //蝉羽青城坨坨体
+  var Font_Board_Button_left = document.getElementById("Info_Board");
+  var Font_Login_Already_Box = document.getElementById("Login_Already_Box");
+  var Font_Login_Fail_Box = document.getElementById("Login_Fail_Box");
+  var Font_Login_Yes_Box = document.getElementById("Login_Yes_Box");
+  var Font_Info_Board_Box = document.getElementById("Info_Board_Box");
+  $webFontApi.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015",Font_Board_Button_left); //蝉羽飞鸟依人
+  $webFontApi.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015",Font_Login_Fail_Box); //蝉羽飞鸟依人
+  $webFontApi.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015",Font_Login_Yes_Box); //蝉羽飞鸟依人
+  $webFontApi.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015",Font_Login_Already_Box); //蝉羽飞鸟依人
+
+  //$webFontApi.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015",Board_Button_Right); //蝉羽飞鸟依人
+  $webFontApi.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015",Font_Info_Board_Box); //蝉羽飞鸟依人
+</script>
+  <div id="article">
+    <div class="form-group">
+      <label for="paperInputs1" style="font-size:xx-large;">UserID</label>
+      <input type="text" class="fieldset papercss_en" placeholder="Userid" id="set_id" maxlength="13" style="width:20rem;margin:auto; font-size:larger;">
+      <h6 style='color:rgb(182, 35, 35);display: none;' id="error_id">请输入正确的用户名.</h6>
+    </div>
+    <div class="form-group">
+      <label for="paperInputs1" style="font-size:xx-large;">Password</label>
+      <input type="password" class="fieldset papercss_en" placeholder="Password" maxlength="30" id="set_password" style="width:20rem;margin:auto; font-size:larger;">
+      <h6 style='color:rgb(182, 35, 35);display: none;' id="error_password">请输入正确的密码格式.(9-30个字母、数字、下划线)</h6>
+    </div>
+    <div>
+      <a class="papercss_en papercss" style="text-decoration: underline; cursor:pointer" href="http://127.0.0.1:8081/SignUp.html">Don't have any account?</a>
+    </div>
+      <center>
+        <div class="col-6 col">
+          <button class="btn-block papercss papercss_en" id="submit_button" style="margin-top: 4rem;">Login!</button>
+        </div>
+      </center>
+
+  </div>
+  <!-------------------------文档编辑器框架-------------------------------->
+
+
+
+<!-- <script src="/node_modules/lightbox2/dist/js/lightbox.js"></script> -->
+<!-- <script type="text/javascript">
+	    document.querySelector('#sortable').sortablejs()
+    </script> -->
+
+<script>
+  /* jQueryObject 是包含您目标文字的 jQuery对象，如$('.myClass')，可一次性对多个元素设置同一字体 */
+  $(function(){
+      //jQueryObject.setFontSync("4bee14ddc268607607def1f1","fontorg-2014"); //蝉羽青城坨坨体
+  });
+</script>
+
+<script src="./javascripts/Login.js"></script>
+<script src="./javascripts/nav_bar_script.js"></script>
+</body>
+</html>

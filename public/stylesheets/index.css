@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin:0 auto;
+    /* padding: 0px; */
+    background: url(../images/index/background.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+        zoom:90%; 
+}
+.zhuti{
+    background: url(../images/book.png);
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    width: 1450px;
+    height: 800px;
+    z-index: 100;
+    position: absolute;
+    top:0px; 
+    right:0px; 
+    bottom:0px; 
+    left:0px;
+    margin:auto;
+}
+.labels{
+    width: 100px;
+    height: 100%;
+    float: right;
+    margin-right: 120px;
+    
+}
+.labels ul{
+    padding-bottom:30px;
+    margin-left:45px;
+}
+li{ 
+    /* padding-top:40px; */
+    margin-bottom: 110px;
+    height: 8%;
+    text-align:center;
+}
+a{ 
+    /* background-color: black; */
+    font-size: larger;
+    font-weight: bolder;
+    margin-right:30%;
+}
+img{
+    border: 0px;
+}
+.background_top{
+    width: 100%;
+    height: 10%;
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    right: 25%;
+    margin-top: 3%;
+}
+
+.register{
+    display: flex;
+    position: absolute;
+    right: 30%;
+    margin-top: 3%;
+}
+.box{
+    width: 100%;
+    height:10%;
+}
+.box_left{
+    width: 40%;
+    height: 100%;
+}
+.box_right{
+    width: 60%;
+    height: 100%;
+    margin-top: 15%;
+    margin-left: 60%;
+}
+.box_menu{
+    width: 400px;
+    height: 100%;
+}
+.box_menu li{
+    width: 100%;
+}
+.box_menu .box_menu_item1{
+    /* padding-left: 0px; */
+    width: 100%;
+    height: 150px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/江安指南-灰色.png);
+}
+.box_menu .box_menu_item1:hover{
+    width:30%;
+    height: 150px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/江安指南-亮色.png);
+}
+.box_menu .box_menu_item2{
+    width: 30%;
+    height: 150px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/树洞-灰色.png);
+}
+.box_menu .box_menu_item2:hover{
+    width: 46px;
+    height: 120px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/树洞-亮色.png) left top;
+}
+.box_menu .box_menu_item3{
+    width: 46px;
+    height: 107px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/留言墙-灰色.png) left top;
+}
+.box_menu .box_menu_item3:hover{
+    width: 46px;
+    height: 107px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/留言墙-亮色.png) left top;
+}
+.box_menu .box_menu_item4{
+    width: 46px;
+    height: 107px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/关于-灰色.png) left top;
+}
+.box_menu .box_menu_item4:hover{
+    width: 46px;
+    height: 107px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 0px;
+    display: block;
+    background:url(../images/index/网页设计比赛/书签/关于-亮色.png) left top;
+}
+
+.footer{
+    display: flex;
+    min-height: 100%;
+    flex-direction: row;
+}
+.footer_link{
+    flex: 1 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.footer_right{
+    flex: 1 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px 10px;
+}
+

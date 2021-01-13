@@ -1,0 +1,284 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    margin:0 auto;
+    /* padding: 0px; */
+    background: url(../../images/backgroundlast.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    
+}
+.zhuti{
+    background: url(../../images/bookall.png) ;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    width: 1450px;
+    height: 800px;
+    z-index: 100;
+    
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* margin:0 auto; */
+    top:0px; 
+    right:0px; 
+    bottom:0px; 
+    left:0px;
+     margin:auto;
+     zoom:90%; 
+     -moz-transform:scale(0.9);
+    -moz-transform-origin:10% center;
+
+}
+
+.part{
+    display: flex;
+    flex-direction: column;
+}
+.jieshao{
+    position: absolute;
+   
+    width: 81%;
+    margin-top: 9%;
+    margin-left: 18%;
+    font-size: 1.1rem;
+    
+    line-height:2rem;
+    color:#996f56;
+    text-indent: 2em;
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+.jieshao div{
+    width: 38%;
+    margin-top: -1%;
+}
+.jieshao img{
+    width: 32%;
+    height: 70%;
+    margin-left: 8%;
+    border:none;
+}
+.cat{
+    /* background-color: black; */
+    /* position: absolute; */
+    width: 70%;
+    margin-top: 42%;
+    /* z-index: 2; */
+    margin-left: 20%;
+}
+
+.footstep1{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    /* margin-top: 44%;
+    margin-left: 18%; */
+    opacity: .5;
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+
+.footstep2{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: -3%;
+    margin-left: 8%;
+    opacity: .5;
+    -moz-transform:rotate(50deg);
+    -webkit-transform:rotate(50deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+.footstep3{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: 2%;
+    margin-left: 15%;
+    opacity: .5;
+    -moz-transform:rotate(70deg);
+    -webkit-transform:rotate(70deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+.footstep4{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: -2%;
+    margin-left: 25%;
+    opacity: .5;
+    -moz-transform:rotate(55deg);
+    -webkit-transform:rotate(55deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+.footstep5{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: 4%;
+    margin-left: 32%;
+    opacity: .5;
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2); /*ie下有局限*/
+}
+.footstep6{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: -2.2%;
+    margin-left: 37%;
+    opacity: .5;
+    -moz-transform:rotate(70deg);
+    -webkit-transform:rotate(70deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+.footstep7{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: 2%;
+    margin-left: 49%;
+    opacity: .5;
+    -moz-transform:rotate(50deg);
+    -webkit-transform:rotate(50deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+.footstep8{
+    position: absolute;
+    width: 4%;
+    height: 8%;
+    margin-top: -5%;
+    margin-left: 55%;
+    opacity: .5;
+    -moz-transform:rotate(50deg);
+    -webkit-transform:rotate(50deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+}
+.catimg{
+    /* width: 20%;
+    height: 20%; */
+    overflow: hidden;
+    position: absolute;
+    /* background-color: black; */
+    width: 350px;
+    height: 220px;
+    border: 6px solid white;
+    box-shadow: 4px 3px 6px #333;
+    margin-left: 35%;
+    margin-top: -19%;
+    border-radius: 50%;
+    opacity: 0;
+   
+}
+.test{
+    font-size: 23px;
+    /* letter-spacing: 1.1em; */
+    /* margin-top: -12%;
+    margin-left: 20%; */
+    font-weight:bold;
+    font-size: 1.2rem;
+    line-height:1.7rem;
+    color:#c45d21;
+}
+.left{
+    margin-top: -23%;
+    margin-left: 17%;   
+    -moz-transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+
+}
+
+.right{
+    -moz-transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie下有局限*/
+    margin-top: 17%;
+    margin-left: 62%;
+
+}
+
+
+
+
+/* 标签按钮*/
+.self-button{
+    display: flex;
+    flex-direction: row;
+    justify-content:normal;
+    width: 100%;
+    height: 12%;
+}
+
+/*修改219-283*/
+.b{
+    width: 3%;
+    height: 100%;
+    /*background-color: palegoldenrod;*/
+}
+.self-button1{
+    margin-top: -36.2%;
+    margin-left: 5.3%;
+}
+.self-button2{
+    margin-top: -27.3%;
+    margin-left: -3%
+}
+.self-button3{
+    margin-top: -17.6%;
+    margin-left: -3.1%;
+}
+.self-button4{
+    margin-top: -7.2%;
+    margin-left: -2.9%;
+    -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+}
+.self-button5{
+    margin-top: 3.2%;
+    margin-left: -3%;
+    /* -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255); */
+}
+.self-button6{
+    margin-left: 87.1%;
+    margin-top: -35.3%;
+    /* -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255); */
+}
+.self-button7{
+    margin-left: -2.9%;
+    margin-top: -21.9%;
+}
+.self-button8{
+    margin-left: -3.1%;
+    margin-top: -10.8%;
+}
+.self-button9{
+    margin-left: -3.1%;
+    margin-top: 1.2%;
+}
+
+a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 100;
+}
+a:hover{
+    /* background-color:gray; */
+    opacity: .5;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 0 6px rgb(255, 255, 255);
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+

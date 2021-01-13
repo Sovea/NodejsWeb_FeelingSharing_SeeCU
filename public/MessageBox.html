@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<title>SeeCU</title>
+<link rel="Shortcut Icon" href="./favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="stylesheets/main.css">
+<!-- <link rel="stylesheet" href="dist/sortable.min.css"> -->
+
+<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="https://www.fontorg.com/js/fontorg/fontorg.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./stylesheets/nav_bar_style.css">
+<link crossorigin="anonymous" integrity="sha384-fbgZzqs18kzkWpmsI2DIHL8nEsY/ks8QJaP0ANIt+omqreCBPJqJa8aeas9xwqj3" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.css" rel="stylesheet">
+<script crossorigin="anonymous" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu//q5B/lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!-- <script type="text/javascript" src="dist/sortable.min.js"></script> -->
+<!-- <link href="../node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" /> -->
+<link rel="stylesheet" href="../asset/css/paper.css">
+<!-- <link rel="stylesheet" href="../asset/css/paper.min.css"> -->
+<script>
+  /* 可选代码：如果您已经通过 jQuery.noConflict() 将 $ 的控制权让渡给了 jQueryXXX 才需要使用 */
+  /* var com_fontorg_jQuery = jQueryXXX; */
+</script>
+
+<script>
+    /* 可选代码：设置同步超时时间(毫秒数)，若达到超时时间字体还未加载成功，则以默认字体显示目标文字（默认值 5000毫秒） */
+    // $webFontApi.setTimeout(3000);
+</script>
+</head>
+<body>
+
+  <!-----------------------------------顶栏--------------------------------->
+<div class="row">
+  <div id="innerHeader">
+    <!-- <button class="papercss" id="Info_Board"><p style="font-size:x-large;">关于黑板</p></button> -->
+    <!-- <div class="row flex-spaces child-borders"> -->
+      <button class="main-nav__toggler toggler-open" type="button" title="Open Menu" style="background-color: #474343; position:fixed; left:1rem; ">
+        <div class="toggler-open__bar"></div>
+        <div class="toggler-open__bar"></div>
+        <div class="toggler-open__bar"></div>
+      </button>
+      <div class="main-nav__expandable">
+        <div class="main-nav__expandable-inner">
+          <div class="nav_container">
+            <div class="main-nav__expandable-content">
+              <!--nav close btn-->
+              <button class="main-nav__toggler toggler-close" type="button" title="Close Menu"></button>
+              <!--nav links list-->
+              <ul class="main-nav__list" >
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Home" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/index.html'"><span class="main-nav__link-title">Home</span></p></li>
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Login" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/Login.html'"><span class="main-nav__link-title">Login</span></p></li>
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="SignUp" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/SignUp.html'"><span class="main-nav__link-title">SignUp</span></p></li>
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="Write Article" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/WriteArticle.html'"><span class="main-nav__link-title">Write Article</span></p></li>
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="MessageBox" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/MessageBox.html'"><span class="main-nav__link-title">MessageBox</span></p></li>
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="User" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/User.html'"><span class="main-nav__link-title">User</span></p></li>
+                <li class="main-nav__item" data-add-text="data-add-text"><p class="main-nav__link" title="About As" style="cursor:pointer" onclick="javascript:window.location.href='http://127.0.0.1:8081/about.html'"><span class="main-nav__link-title">About Us</span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <label class="paper-btn margin overview fontorg-2015" for="modal-1" id="Info_Board" style="font-size:x-large; width: 7rem; height:4rem; text-align:center;">关于黑板</label>
+    <!-- </div> -->
+
+    <p>
+      <font size="7" id="Board_Header">风景心情小黑板</font>
+    </p>
+    <button class="papercss overview fontorg-2015" id="Write_Board" style="width: 7rem; height:4rem; font-size:x-large; text-align:center">我要上黑板！</button>
+    <img id="head_img" style="display:none; width:4rem; height:4rem; z-index:999; position:fixed; right:1em; top:1rem;" src="">
+  </div>
+  
+  <!-------------------------规则介绍弹窗，papercss的modal元素-------------------------------->
+  <div id="Info_Board_Box" class="fontorg-2015">
+  <input class="modal-state" id="modal-1" type="checkbox">
+  <div class="modal">
+    <label class="modal-bg" for="modal-1"></label>
+    <div class="modal-body">
+      <label class="btn-close" for="modal-1">X</label>
+      <h4 class="modal-title">黑板规则</h4>
+      <h5 class="modal-subtitle">畅所欲言，分享心情</h5>
+      <p class="modal-text">黑板的马克笔化身键盘，开始分享一天好心情！<br>我们没有买黑板擦！ :D</p>
+      <label for="modal-1" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Nice!</label>
+      <!-- <button class="papercss" for="modal-1"></button> -->
+    </div>
+  </div>
+</div>
+<label class="paper-btn margin" for="modal-2" id="Login_No_Board" style="display:none;">请先登录</label>
+<div id="Login_No_Box" style="display:none;" class="fontorg-2015">
+  <input class="modal-state" id="modal-2" type="checkbox">
+  <div class="modal">
+    <label class="modal-bg" for="modal-2"></label>
+    <div class="modal-body">
+      <label class="btn-close" for="modal-2">X</label>
+      <h4 class="modal-title">查看提醒</h4>
+      <h5 class="modal-subtitle">还未登录</h5>
+      <p class="modal-text"> <br> 你还没登录呢,先登录再看呗.:D</p>
+      <label for="modal-2" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Fine!</label>
+      <!-- <button class="papercss" for="modal-1"></button> -->
+    </div>
+  </div>
+</div>
+<label class="paper-btn margin" for="modal-3" id="Search_Error_Board" style="display:none;">获取信息失败</label>
+<div id="Search_Error_Box" style="display:none;" class="fontorg-2015">
+  <input class="modal-state" id="modal-3" type="checkbox">
+  <div class="modal">
+    <label class="modal-bg" for="modal-3"></label>
+    <div class="modal-body">
+      <label class="btn-close" for="modal-3">X</label>
+      <h4 class="modal-title">查看警示</h4>
+      <h5 class="modal-subtitle">登录异常</h5>
+      <p class="modal-text"> <br> 是我搞错了还是你动手脚了?盯~.:D</p>
+      <label for="modal-3" style="border:2px solid rgb(112, 104, 104); cursor:pointer">Tui!</label>
+      <!-- <button class="papercss" for="modal-1"></button> -->
+    </div>
+  </div>
+</div>
+<!--------------------------------艺术字体设置------------------------------------>
+  <script>    
+    /* 参数 aDomElement 是包含您目标文字的 DOM元素，如document.getElementById('xxx')；一次只处理一个元素，如要对多个元素进行操作，可多次调用该函数 */
+    // $webFontApi.setFontSync("4bee14ddc268607607def1f1","fontorg-2014",aDomElement); //蝉羽青城坨坨体
+    var Font_Board_Header =  document.getElementById("Board_Header");
+    $webFontApi.setFontSync("4bee14ddc268607607def1f1","fontorg-2014",Board_Header); //蝉羽青城坨坨体
+    var Font_2015 = $(".fontorg-2015");
+  Font_2015.setFontSync("4bee963cc268e1d507dfdfe7","fontorg-2015"); //蝉羽飞鸟依人
+  </script>
+
+<!--------------------------------卡片展示---------------------------------------->
+<!-- <main class="sortable"> -->
+<div class="container" style="" id="container">
+
+
+            
+</div>
+<!-- <center> -->
+  <div style="margin-top:3rem; width:100%; text-align:center;">
+    <button class="papercss_en papercss" id="more_articles" style="display: block; margin:auto;">More Articles</button>
+  </div>
+  <!-- </center> -->
+<!-- <script src="/node_modules/lightbox2/dist/js/lightbox.js"></script> -->
+<!-- <script type="text/javascript">
+	    document.querySelector('#sortable').sortablejs()
+    </script> -->
+
+<script>
+  /* jQueryObject 是包含您目标文字的 jQuery对象，如$('.myClass')，可一次性对多个元素设置同一字体 */
+  $(function(){
+      //jQueryObject.setFontSync("4bee14ddc268607607def1f1","fontorg-2014"); //蝉羽青城坨坨体
+  });
+</script>
+
+<script src="./javascripts/MessageBox.js"></script>
+<script src="./javascripts/nav_bar_script.js"></script>
+</body>
+</html>
